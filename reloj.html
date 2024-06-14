@@ -64,20 +64,20 @@
 
         function getBackgroundImage(condition, isDay) {
             if (condition.includes('rain')) {
-                return isDay ? 'day_rain.jpg' : 'night_rain.jpg';
+                return isDay ? 'img/day_rain.jpg' : 'img/night_rain.jpg';
             } else if (condition.includes('clear')) {
-                return isDay ? 'day_clear.jpg' : 'night_clear.jpg';
+                return isDay ? 'img/day_clear.jpg' : 'img/night_clear.jpg';
             } else if (condition.includes('cloud')) {
-                return isDay ? 'day_cloudy.jpg' : 'night_cloudy.jpg';
+                return isDay ? 'img/day_cloudy.jpg' : 'img/night_cloudy.jpg';
             } else if (condition.includes('snow')) {
-                return isDay ? 'day_snow.jpg' : 'night_snow.jpg';
+                return isDay ? 'img/day_snow.jpg' : 'img/night_snow.jpg';
             } else if (condition.includes('thunderstorm')) {
-                return isDay ? 'day_thunderstorm.jpg' : 'night_thunderstorm.jpg';
+                return isDay ? 'img/day_thunderstorm.jpg' : 'img/night_thunderstorm.jpg';
             } else if (condition.includes('fog') || condition.includes('mist')) {
-                return isDay ? 'day_fog.jpg' : 'night_fog.jpg';
+                return isDay ? 'img/day_fog.jpg' : 'img/night_fog.jpg';
             }
             // Default condition
-            return isDay ? 'day_clear.jpg' : 'night_clear.jpg';
+            return isDay ? 'img/day_clear.jpg' : 'img/night_clear.jpg';
         }
 
         async function updateWeather() {
